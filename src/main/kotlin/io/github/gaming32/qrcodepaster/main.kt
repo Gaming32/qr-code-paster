@@ -5,31 +5,18 @@ import com.google.zxing.MultiFormatReader
 import com.google.zxing.NotFoundException
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource
 import com.google.zxing.common.HybridBinarizer
-import java.awt.BorderLayout
 import java.awt.Color
 import java.awt.Desktop
 import java.awt.Image
 import java.awt.Toolkit
-import java.awt.datatransfer.Clipboard
 import java.awt.datatransfer.DataFlavor
 import java.awt.event.ActionEvent
 import java.awt.image.BufferedImage
-import java.io.File
 import java.io.IOException
 import java.net.URI
 import java.net.URISyntaxException
 import javax.imageio.ImageIO
-import javax.swing.AbstractAction
-import javax.swing.GroupLayout
-import javax.swing.ImageIcon
-import javax.swing.JButton
-import javax.swing.JFrame
-import javax.swing.JLabel
-import javax.swing.JOptionPane
-import javax.swing.JTextArea
-import javax.swing.JTextField
-import javax.swing.SwingUtilities
-import javax.swing.UIManager
+import javax.swing.*
 import kotlin.concurrent.thread
 
 val codeReader = MultiFormatReader()
